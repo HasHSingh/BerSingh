@@ -1,0 +1,45 @@
+/* Reset e Stili Base */
+body { margin: 0; font-family: 'Segoe UI', sans-serif; line-height: 1.6; }
+h1 { font-size: 4rem; }
+img { width: 100%; border-radius: 12px; display: block; }
+
+/* Layout Contenitore */
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+}
+
+#FirstSectionDiv {
+    background-color: #dcbec3;
+    width: 20rem;
+    align-self: center;
+}
+
+#FirstSectionText {
+    color: #2e3625;
+    font-family: fantasy;
+    text-align: center;
+}
+.image-col, .text-col {
+    flex: 1 1 450px; /* Base di 450px, poi cresce */
+    padding: 20px;
+}
+
+/* Colori delle Sezioni */
+.section-one { background-color: #2e3625; color: #dcbec3; }
+.section-two { background-color: #222719; color: #dcbec3; }
+.section-three { background-color: #465338; color: #dcbec3; }
+
+/* L'inversione della seconda sezione */
+.section-two .container {
+    flex-direction: row-reverse;
+}
+
+/* Ottimizzazione per Mobile */
+@media (max-width: 768px) {
+    .text-col { text-align: center; }
+}
