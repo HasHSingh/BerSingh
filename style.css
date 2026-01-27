@@ -24,9 +24,18 @@ img { width: 100%; border-radius: 12px; display: block; }
     font-family: fantasy;
     text-align: center;
 }
+
+.SecondSectionIcons {
+    width: 10%;
+}
+
 .image-col, .text-col {
     flex: 1 1 450px; /* Base di 450px, poi cresce */
     padding: 20px;
+}
+
+.text-icon {
+    width: 50%;
 }
 
 /* Colori delle Sezioni */
@@ -38,6 +47,43 @@ img { width: 100%; border-radius: 12px; display: block; }
 .section-two .container {
     flex-direction: row-reverse;
 }
+
+
+/* Layout a due colonne interne per le features */
+.feature-item {
+    display: flex;
+    align-items: flex-end; /* Allinea l'icona in alto rispetto al testo */
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/* Colonna sinistra: Icona */
+.icon-part {
+    flex: 0 0 60px; /* Larghezza fissa per le icone */
+    display: flex;
+    justify-content: center;
+}
+
+/* Colonna destra: Testo */
+.info-part {
+    flex: 1; /* Prende tutto lo spazio rimanente */
+    padding-left: 20px;
+}
+
+/* Stile testi interni */
+.info-part h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.3rem;
+    color: #3498db; /* Colore titolo icona */
+}
+
+.info-part p {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+
 
 /* Ottimizzazione per Mobile */
 @media (max-width: 768px) {
