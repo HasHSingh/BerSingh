@@ -99,12 +99,18 @@ body {
     .section { min-height: 80vh; }
     .image-side { flex: 1 1 100%; height: 45vh; }
     .text-side { flex: 1 1 100%; padding: 0px 20px; }
-    .section-intro h1 { font-size: 4rem; }
+    .section-intro h1 { font-size: 4rem; margin-top: -60px; }
     .info-part p { font-size: 1.4rem; }
     .full-img {
         width: 95%;
         height: 95%;
         object-fit: contain; /* L'immagine viene mostrata interamente senza tagli */
         display: block;
+    }
+    .thanks{
+        margin-bottom: 30px;
+    }
+    .save-the-date {
+        margin-bottom: 30px;
     }
 }
