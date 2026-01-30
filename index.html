@@ -3,46 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giorgia & Hashpreet - 03.05.2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Sito a Sezioni Alternate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <section class="row section-one">
-        <div class="container">
-            <div class="image-col">
-                <img src="images/Sakura.png" alt="Sakura">
+    <section class="section section-intro">
+        <div class="split-container">
+            <div class="image-side">
+                <img src="images/Sakura.png" alt="Fiori di ciliegio" class="full-img">
             </div>
-            <div class="text-col">
-                <h1>Giorgia & Hashpreet</h1>
-                <div id="FirstSectionDiv">
-                    <p id="FirstSectionText">Save the date</p>
+            <div class="text-side">
+                <h1 class="elegant-font">Giorgia & Hashpreet</h1>
+                <div class="save-the-date">Save the date</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-details">
+        <div class="split-container row-reverse">
+            <div class="image-side">
+                <img src="https://picsum.photos/seed/tech/800/600" alt="Noi" class="full-img">
+            </div>
+            <div class="text-side">
+                <h2 class="elegant-font">Il nostro giorno speciale</h2>
+
+                <div class="info-item">
+                    <div class="icon-part">
+                        <img src="images/Calendario.png" class="mini-icon" alt="Ritrovo">
+                    </div>
+                    <div class="info-part">
+                        <p>03.05.2026</p>
+                    </div>
                 </div>
+
+                <div class="info-item">
+                    <div class="icon-part">
+                        <img src="images/Anelli.png" class="mini-icon" alt="Cerimonia">
+                    </div>
+                    <div class="info-part">
+                        <p>Cerimonia - ore 11:00</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon-part">
+                        <img src="images/Luogo.png" class="mini-icon" alt="Location">
+                    </div>
+                    <div class="info-part">
+                        <p>Agriturismo Prato degli Angeli</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-travel">
+        <div class="split-container">
+            <div class="image-side">
+                <img src="images/Torii.png" alt="Viaggio in Giappone" class="full-img">
+            </div>
+            <div class="text-side">
+                <p class="travel-desc">Con il tuo contributo, il nostro viaggio dei sogni in Giappone diventerà realtà!</p>
                 
-            </div>
-        </div>
-    </section>
+                <div class="iban-card">
+                    <span class="label">IBAN</span>
+                    <p class="iban-val">IT00 X 00000 00000 000000000000</p>
+                </div>
 
-    <section class="row section-two">
-        <div class="container">
-            <div class="image-col">
-                <img src="https://picsum.photos/seed/tech/800/600" alt="Test 2">
-            </div>
-            <div class="text-col">
-                <h2>Seconda Sezione</h2>
-                <p>In questa sezione abbiamo invertito le posizioni grazie alla proprietà CSS <code>flex-direction: row-reverse</code>.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="row section-three">
-        <div class="container">
-            <div class="image-col">
-                <img src="images/Torii.png" alt="Torii">
-            </div>
-            <div class="text-col">
-                <h2>Terza Sezione</h2>
-                <p>Torniamo alla disposizione originale. Semplice, pulito e perfetto per GitLab Pages.</p>
+                <p class="thanks">
+                    Grazie di cuore!<br>
+                    <span class="elegant-font">Arigatou gozaimasu!</span>
+                </p>
             </div>
         </div>
     </section>
