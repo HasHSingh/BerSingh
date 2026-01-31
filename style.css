@@ -77,22 +77,39 @@ body {
 .info-part p { font-size: 1.6rem; margin: 0; }
 
 .section-travel { background-color: #3B4A2F; color: white; }
-.travel-desc { font-size: 2rem; font-style: italic; max-width: 500px; }
+.travel-desc { font-size: 2rem; max-width: 500px; }
 
 .iban-card {
     background-color: #D8B4BC;
     color: #2D3436;
-    padding: 30px;
+    padding-top: 30px;
     border-radius: 15px;
     margin: 30px 0;
     width: 100%;
     max-width: 500px;
     border: 1px solid #5B6D49;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
 }
-.label { font-size: 0.8rem; font-weight: bold; display: block; margin-bottom: 5px; }
-.iban-val { font-size: 1.1rem; font-weight: bold; word-break: break-all; }
+.label { font-size: 1.2rem; font-weight: bold; display: block; margin-bottom: 5px; }
+.iban-val { font-size: 1.1rem; font-weight: bold; word-break: break-all; font-family: 'Roboto';}
 
 .thanks { font-size: 1.4rem; margin-top: 10px; }
+
+/* Rende il link invisibile dal punto di vista dello stile */
+.clean-link {
+    text-decoration: none; /* Rimuove la sottolineatura */
+    color: inherit;        /* Eredita il colore dal genitore (.info-part p) */
+    cursor: pointer;       /* Mantiene la manina quando ci passi sopra */
+}
+
+/* Opzionale: un leggero feedback visivo solo quando ci passi sopra */
+.clean-link:hover {
+    opacity: 0.8; 
+    transition: opacity 0.3s ease;
+}
+
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 900px) {
